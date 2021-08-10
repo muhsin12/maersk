@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+}
+.wrapper {
+  width: 90%;
+  height: 700px;
+  margin: 0 auto;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.button-container {
+  width: 15%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards-container {
+  width: 85%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 80%;
+  height: 50px;
+  background-color: #72c3dc;
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 2px 8px 9px 2px #000;
+  cursor: pointer;
+}
+.card {
+  width: 30%;
+  height: 200px;
+  border: 1px solid;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+.mobile{
+    display: none;
+}
+.numberContianer{
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .cards-container {
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 10px;
+  }
+  .button-container {
+    height: 150px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  button {
+    width: 40%;
+  }
+  .cover{
+      width: 10%;
+      height: 100%;
+  }
+  .mobile{
+      display: inline;
+      
+  }
+  .desktop{
+      display: none;
+  }
+  .numberContianer{
+      width: 80%;
+      display: block;
+     text-align: center;
+  }
+  .wrapper{
+      height: 600px;
+  }
+}
